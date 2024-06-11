@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="26.122" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="User journey for Mobile phones search" name="List all the Samsung phones with the User given specifications - Example #1.1" time="25.96">
+<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for element to be clickable: By.xpath: //span/li[@aria-label='13 to 19.9 MP']/span/a/div/label/i (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\crake\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49263}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49263/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7f0ac61f8ed8a296e2963b1ecf614f33">
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span/li[@aria-label='13 to 19.9 MP']/span/a/div/label/i (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\crake\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49263}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49263/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7f0ac61f8ed8a296e2963b1ecf614f33
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at pages.BasePage.clickByjs(BasePage.java:36)
+	at pages.HomePage.selectCamResolution(HomePage.java:82)
+	at pages.HomePage.selectFilters(HomePage.java:68)
+	at steps.HomepageStepDefs.selects_the_mobile_phones(HomepageStepDefs.java:33)
+	at ✽.Selects the Mobile phones "Samsung"(file:///C:/Users/crake/workspace/AmazonTestDemo/src/test/resources/Features/homePage.feature:11)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User landed on the HomePage...........................................passed
+When User selects "Electronics & Computers" from the Main menu..............passed
+And selects "Phones & Accessories"..........................................passed
+And Selects the Mobile phones "Samsung".....................................failed
+Then User should see the specifications for "Samsung" mobiles...............skipped
+]]></system-out>
+</testcase>
+</testsuite>
